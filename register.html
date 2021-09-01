@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/my-styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./style/JS/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div class="topnav">
+  <a class="active" href="./index.html">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Shop</a>
+  <a href="./cart.html">Cart</a>
+    <div class="dropdown">
+    <button class="dropbtn">Sign Up
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./login.html">login</a>
+      <a href="./register.html">register</a>
+    </div>
+  </div> 
+      <div class="dropdown">
+    <button class="dropbtn">Garage
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Create Vehicle</a>
+      <a href="#">Update Vehicle</a>
+      <a href="#">Remove Vehicle</a>
+      <a href="#">Customer Profile</a>
+    </div>
+  </div> 
+  <div id="search" class="search-container">
+    <form onsubmit="event.preventDefault(); searchVehicles();">
+      <input id="searchTerm" type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+      <form class="modal-content" action="https://obscure-sea-63906.herokuapp.com/customer-registration" method="POST">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="firstname"><b>firstname</b></label>
+      <input type="text" placeholder="Enter name" name="firstname" required>
+
+      <label for="lastname"><b>lastname</b></label>
+      <input type="text" placeholder="Enter Surname" name="lastname" required>
+
+      <label for="contact"><b>Contact</b></label>
+      <input type="text" placeholder="Eg. 078-123-4567" name="contact" required>
+
+      <label for="pws"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Eg. example@gmail.com" name="email" required>
+      
+      <div class="clearfix">
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>

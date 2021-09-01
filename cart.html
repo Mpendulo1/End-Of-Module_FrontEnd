@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/my-styles.css">
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="./index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Shop</a>
+    <a href="./cart.html">Cart</a>
+      <div class="dropdown">
+      <button class="dropbtn">Sign Up
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./login.html">login</a>
+        <a href="./register.html">register</a>
+      </div>
+    </div> 
+        <div class="dropdown">
+      <button class="dropbtn">Garage
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Create Vehicle</a>
+        <a href="#">Update Vehicle</a>
+        <a href="#">Remove Vehicle</a>
+        <a href="#">Customer Profile</a>
+      </div>
+    </div> 
+   
+    <div id="id05" class="modal container">
+     <h2>Purchase Vehicle</h2> 
+  <!-- <span
+  onclick="document.getElementById('id05').style.display='none'"
+  class="close"
+  title="Close Modal"
+  >&times;</span
+  > -->
+  <div class="cart-container">
+  <div class="vehicle-container"></div>
+  </div>
+      <div class="cart-buttons">  
+        <button  id="emptycart">Empty Cart</button>
+        <button id="checkout">Checkout</button>
+      </div>
+</div>
+
+
+
+
+</body>
+</html>
