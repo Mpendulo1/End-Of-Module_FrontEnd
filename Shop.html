@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Vehicles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/my-styles.css">
     <link rel="stylesheet" href="./style/login.css">
+    <script src="./JS/script.js"></script>
+    <script src="./JS/edit.js"></script>
 </head>
 <body>
-    <div class="topnav">
+
+<div class="topnav">
   <a class="active" href="./index.html">Home</a>
   <a href="#about">About</a>
   <a href="./Shop.html">Shop</a>
@@ -35,6 +39,69 @@
     </div>
   </div> 
  
+  <div id="search" class="search-container">
+    <form onsubmit="event.preventDefault(); searchVehicles();">
+      <input id="searchTerm" type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+   <div class="vehicle-container"></div> 
+   <div id="id05" class="modal container">
+     <h2>Purchase Vehicle</h2> 
+  <span
+  onclick="document.getElementById('id05').style.display='none'"
+  class="close"
+  title="Close Modal"
+  >&times;</span
+  >
+  <div class="cart-container">
+ 
+   
+  </div>
+      <div class="cart-buttons">  
+        <button  id="emptycart">Empty Cart</button>
+        <button id="checkout">Checkout</button>
+      </div>
+</div>
+
+<div id="remove_vehicle" class="modal">
+  <span
+    onclick="document.getElementById('remove_vehicle').style.display='block'"
+    class="close"
+    title="Close Modal"
+    >&times;</span
+  >
+  <form class="modal-content">
+    <div class="container">
+      <h1>Remove Vehicle</h1>
+      <p>Enter Vehicle-ID To Remove  A Vehicle.</p>
+      <hr />
+      <div class="container1 center">
+      <label for="vehicle-id"><b>Vehicle-ID</b></label>
+      <input
+        id="delete-car"
+        type="text"
+        placeholder="Eg. 1"
+        name="VHC_id"
+        required
+      />
+      <div class="clearfix">
+        <button onsubmit="event.preventDefault(); deleteProduct()" type="submit" class="signupbtn">Remove</button>
+        <button
+          type="button"
+          onclick="document.getElementById('remove_vehicle').style.display='none'"
+          class="cancelbtn"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- updating a vehicle -->
+
 <div id="update_vehicle" class="modal">
   <span 
   onclick="document.getElementById('update_vehicle').style.display='block'"
@@ -69,6 +136,8 @@
     </div>
   </form>
 </div>
+
+<!-- add Vehicle -->
 
 </body>
 </html>
