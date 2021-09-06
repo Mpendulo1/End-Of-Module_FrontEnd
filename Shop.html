@@ -9,37 +9,35 @@
     <link rel="stylesheet" href="./style/my-styles.css">
     <link rel="stylesheet" href="./style/login.css">
     <script src="./JS/script.js"></script>
-    <script src="./JS/edit.js"></script>
 </head>
 <body>
-
-<div class="topnav">
-  <a class="active" href="./index.html">Home</a>
-  <a href="#about">About</a>
-  <a href="./Shop.html">Shop</a>
-  <a onclick="document.getElementById('id05').style.display='block'">Cart</a>
-    <div class="dropdown">
-    <button class="dropbtn">Sign Up
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="./login.html">login</a>
-      <a href="./register.html">register</a>
-    </div>
-  </div> 
+  <div class="topnav">
+    <a class="active" href="./index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="./Shop.html">Shop</a>
+    <a onclick="document.getElementById('id05').style.display='block'">Cart</a>
       <div class="dropdown">
-    <button class="dropbtn">Garage
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a onclick="document.getElementById('id0001').style.display='block'">Create Vehicle</a>
-      <a onclick="document.getElementById('remove_vehicle').style.display='block'">Remove Vehicle</a>
-      <a onclick="document.getElementById('update_vehicle').style.display='block'">Update Vehicle</a>
-      <a href="#">Customer Profile</a>
-    </div>
-  </div> 
+      <button class="dropbtn">Sign Up
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./login.html">login</a>
+        <a href="./register.html">register</a>
+      </div>
+    </div> 
+        <div class="dropdown">
+      <button class="dropbtn">Garage
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./CreateVehicle.html">Create Vehicle</a>
+        <a href="./removevehicle.html">Remove Vehicle</a>
+        <a href="./updatevehicle.html">Update Vehicle</a>
+        <a href="#">Customer Profile</a>
+      </div>
+    </div> 
  
-  <div id="search" class="search-container">
+    <div id="search" class="search-container">
     <form onsubmit="event.preventDefault(); searchVehicles();">
       <input id="searchTerm" type="text" placeholder="Search.." name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
@@ -47,6 +45,10 @@
   </div>
 </div>
    <div class="vehicle-container"></div> 
+
+
+   
+
    <div id="id05" class="modal container">
      <h2>Purchase Vehicle</h2> 
   <span
@@ -61,11 +63,14 @@
   </div>
       <div class="cart-buttons">  
         <button  id="emptycart">Empty Cart</button>
-        <button id="checkout">Checkout</button>
+        <button onclick="window.location.replace('./checkout.html')" id="checkout">Checkout</button>
       </div>
 </div>
 
-<div id="remove_vehicle" class="modal">
+
+
+
+<div id="#" class="modal">
   <span
     onclick="document.getElementById('remove_vehicle').style.display='block'"
     class="close"
@@ -87,7 +92,7 @@
         required
       />
       <div class="clearfix">
-        <button onsubmit="event.preventDefault(); deleteProduct()" type="submit" class="signupbtn">Remove</button>
+        <button onsubmit="event.preventDefault(), deleteProduct()" type="submit" class="signupbtn">Remove</button>
         <button
           type="button"
           onclick="document.getElementById('remove_vehicle').style.display='none'"
@@ -99,45 +104,6 @@
     </div>
   </form>
 </div>
-
-<!-- updating a vehicle -->
-
-<div id="update_vehicle" class="modal">
-  <span 
-  onclick="document.getElementById('update_vehicle').style.display='block'"
-  class="close"
-  title="Close Modal">&times;</span>
-
-    <form class="modal-content" >
-    <div class="container">
-      <h1>Update Vehicle</h1>
-      <p>Please Enter Your Details In This To Edit A Vehicle</p>
-      <hr>
-      <input id="Product_ID" type="text" name="VHC_id">
-      <input id="name" type="text" name="name" >
-      <input id="brand" type="text" name="brand" >
-      <input id="type" type="text" name="type" >
-      <input id="price" type="text" name="price" >
-      <input id="year" type="text"  name="year" >
-      <input id="description" type="text" name="description" >
-      <input id="transition" type="text" name="transition" >
-      <input id="image_url" type="text" placeholder="Ener image url.." name="image">
-      
-      <div class="clearfix">
-        <button onsubmit="event.preventDefault(); updateProducts()" type="submit" class="signupbtn">Update</button>
-                <button
-          type="button"
-          onclick="document.getElementById('update_vehicle').style.display='none'"
-          class="cancelbtn"
-        >
-          Cancel
-        </button>
-      </div>
-    </div>
-  </form>
-</div>
-
-<!-- add Vehicle -->
 
 </body>
 </html>

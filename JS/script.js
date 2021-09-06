@@ -1,6 +1,4 @@
-var modal = document.getElementById("id05");
-var modal = document.getElementById("remove_vehicle");
-var modal = document.getElementById("update_vehicle");
+var create = document.getElementById("create-vehicle");
 let vehicles = []
 let cart = []
 console.log(cart)

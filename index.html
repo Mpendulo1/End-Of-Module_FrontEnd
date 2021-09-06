@@ -7,6 +7,7 @@
     <title>home</title>
     <link rel="stylesheet" href="./style/my-styles.css">
     <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/landing.css">
 </head>
 <body>
     <div class="topnav">
@@ -28,47 +29,29 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a onclick="document.getElementById('id0001').style.display='block'">Create Vehicle</a>
-      <a onclick="document.getElementById('remove_vehicle').style.display='block'">Remove Vehicle</a>
-      <a onclick="document.getElementById('update_vehicle').style.display='block'">Update Vehicle</a>
+      <a href="./CreateVehicle.html">Create Vehicle</a>
+      <a href="./removevehicle.html">Remove Vehicle</a>
+      <a href="./updatevehicle.html">Update Vehicle</a>
       <a href="#">Customer Profile</a>
     </div>
   </div> 
- 
-<div id="update_vehicle" class="modal">
-  <span 
-  onclick="document.getElementById('update_vehicle').style.display='block'"
-  class="close"
-  title="Close Modal">&times;</span>
-
-    <form class="modal-content" >
-    <div class="container">
-      <h1>Update Vehicle</h1>
-      <p>Please Enter Your Details In This To Edit A Vehicle</p>
-      <hr>
-      <input id="Product_ID" type="text" name="VHC_id">
-      <input id="name" type="text" name="name" >
-      <input id="brand" type="text" name="brand" >
-      <input id="type" type="text" name="type" >
-      <input id="price" type="text" name="price" >
-      <input id="year" type="text"  name="year" >
-      <input id="description" type="text" name="description" >
-      <input id="transition" type="text" name="transition" >
-      <input id="image_url" type="text" placeholder="Ener image url.." name="image">
-      
-      <div class="clearfix">
-        <button onsubmit="event.preventDefault(); updateProducts()" type="submit" class="signupbtn">Update</button>
-                <button
-          type="button"
-          onclick="document.getElementById('update_vehicle').style.display='none'"
-          class="cancelbtn"
-        >
-          Cancel
-        </button>
-      </div>
+</div> 
+<section id="landing" class="landing-page">
+  <div class="container">
+       <div class="header">
+     <h1>CAR DEALERSHIP</h1>
+    <h2 class="headings">THE WIND IS NOT EVEN CLOSE TO US</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laudantium, vitae laboriosam dicta ducimus ad. Nulla atque sed dicta quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, distinctio?</p>
+    <div class="btn-links">
+          <a class="read-more" href="#">read more</a>
     </div>
-  </form>
-</div>
 
+   </div>
+  </div>
+
+</section>
+<footer>
+
+</footer>
 </body>
 </html>
