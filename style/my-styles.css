@@ -3,6 +3,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: gainsboro;
+
 }
 
 .topnav {
@@ -19,6 +21,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .topnav a:hover {
@@ -51,10 +54,11 @@ body {
   font-size: 17px;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .topnav .search-container button:hover {
-  background: #ccc;
+  background: #F49F0A;
 }
 
  @media screen and (max-width: 600px) {
@@ -122,28 +126,29 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-img.vehicle-logo {
-  width: 120px;
-  height: 90px;
-}
+
 img.vehicle-image {
+  margin-top: -50px;
   width: 100%;
 }
-.vehicle {
-  display: inline-block;
-}
+
 .vehicle-container {
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   margin-top: 5vh;
   position: inherit;
 }
 .card {
   position: relative;
-  width: 320px;
-  height: 450px;
+  min-width: 250px;
+  max-width: 300px; 
+  height: auto;
   background: #b9bbbe;
   border-radius: 10px;
   border: 2px #d7d7d7;
-  box-shadow: 0px 0px 20px 0px #e9d985;
   overflow: hidden;
 }
 .box-img {
@@ -169,4 +174,33 @@ img.vehicle-image {
 
 .image {
   width: 100%;
+}
+.btn {
+  background-color: #2196F3;
+  text-decoration: none;
+  transition: 0.5s;
+  padding: 10px 10px;
+  border: 1px solid #2196F3;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 100px;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #F49F0A;
+  color: white;
+  border: #F49F0A;
+}
+.vehicle-name {
+  color: #F49F0A;
+}
+.cart-header {
+  font-size: 2.5rem;
+  color: #F49F0A;
+  display: flex;
+  justify-content: center;
+}
+.cart-buttons {
+  display: flex;
+  justify-content: center;
 }

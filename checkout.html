@@ -7,6 +7,7 @@
     <title>Checkout</title>
     <link rel="stylesheet" href="./style/my-styles.css">
     <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/forms.css">
     <script src="./JS/checkout.js"></script>
 </head>
 <body>
@@ -30,19 +31,22 @@
     </button>
     <div class="dropdown-content">
       <a href="./CreateVehicle.html">Create Vehicle</a>
-      <a onclick="document.getElementById('remove_vehicle').style.display='block'">Remove Vehicle</a>
-      <a onclick="document.getElementById('update_vehicle').style.display='block'">Update Vehicle</a>
+      <a href="./removevehicle.html">Remove Vehicle</a>
+      <a href="./updatevehicle.html">Update Vehicle</a>
       <a href="#">Customer Profile</a>
     </div>
   </div> 
 
   <form>
     <div class="container">
+      <div class="header">
       <h1>Car Insurance Fillout Form</h1>
-      <p>Please fill out your details</p>
+      <p>Please fill out your details</p>  
+      </div>
+
       <hr>
-  
-      <label for="name"><b>Name</b></label>
+  <div class="label-form">
+          <label for="name"><b>Name</b></label>
       <input type="text" name="NAme" id="name" required>
   
       <label for="surname"><b>Surname</b></label>
@@ -86,6 +90,8 @@
       <option value="between 300KM and farther">300KM and Away</option>
       </select>
 
+
+  </div>
       <hr>
       <button onclick="event.preventDefault(); checkOut()" type="submit" class="registerbtn">SUBMIT</button>
     </div>

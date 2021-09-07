@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./style/login.css"> -->
     <link rel="stylesheet" href="./style/my-styles.css">
+    <link rel="stylesheet" href="./style/forms.css">
     <script src="./JS/edit.js"></script>
 </head>
 <body>
@@ -35,38 +35,41 @@
             <a href="#">Customer Profile</a>
           </div>
         </div> 
+</div>
 
-
-        <div id="update_vehicle" class="modal">
-              <form class="modal-content" method="PUT">
-              <div class="container">
-                <h1>Update Vehicle</h1>
-                <p>Please Enter Your Details In This To Edit A Vehicle</p>
-                <hr>
-                <label for="vehicle id ">Vehicle Id</label>
-            <input id="Product_ID" type="text" name="VHC_id">
-            <label for="vehicle name">vehicle Name</label>
-            <input id="name" type="text" name="name" >
-            <label for="vehicle Brand">Vehicle Brand</label>
-            <input id="brand" type="text" name="brand" >
-            <label for="Vehicle Type">Vehicle Type</label>
-            <input id="type" type="text" name="type" >
-            <label for="Vehicle Price">Vehicle Price</label>
-            <input id="price" type="text" name="price" >
-            <label for="Vehicle Yeat">Vehicle Year</label>
-            <input id="year" type="text"  name="year" >
-            <label for="Vehicle Descriptio">Vehicle Description</label>
-            <input id="description" type="text" name="description" >
-            <label for="Vehicle Transition">Vehicle Transition</label>
-            <input id="transition" type="text" name="transition" >
-            <label for="image url">Image Url</label>
-            <input id="image_url" type="text" placeholder="Ener image url.." name="image">
-            
-                <div class="clearfix">
-                  <button onsubmit="event.preventDefault(); updateProducts()" type="submit" class="signupbtn">Update</button>
-                </div>
-              </div>
-            </form>
-          </div>
+<div id="update_vehicle" class="modal">
+		<form class="modal-content" action="https://obscure-sea-63906.herokuapp.com/edit-vehicle/" method="PUT">
+		<div class="container">
+			<div class="header">
+		<h1>Update Vehicle</h1>
+		<p>Please Enter Your Details In This To Edit A Vehicle</p>
+			</div>
+		<hr>
+		<div class="form-label">
+		<label for="vehicle id ">Vehicle Id</label>
+	<input id="Product_ID" type="text" name="VHC_id">
+	<label for="vehicle name">vehicle Name</label>
+	<input id="name" type="text" name="name" >
+	<label for="vehicle Brand">Vehicle Brand</label>
+	<input id="brand" type="text" name="brand" >
+	<label for="Vehicle Type">Vehicle Type</label>
+	<input id="type" type="text" name="type" >
+	<label for="Vehicle Price">Vehicle Price</label>
+	<input id="price" type="text" name="price" >
+	<label for="Vehicle Yeat">Vehicle Year</label>
+	<input id="year" type="text"  name="year" >
+	<label for="Vehicle Descriptio">Vehicle Description</label>
+	<input id="description" type="text" name="description" >
+	<label for="Vehicle Transition">Vehicle Transition</label>
+	<input id="transition" type="text" name="transition" >
+	<label for="image url">Image Url</label>
+	<input id="image_url" type="text" placeholder="Ener image url.." name="image">               
+		</div>
+		<div class="clearfix">
+			<button onclick=" updateProducts(), event.preventDefault()" type="submit" class="signupbtn">Update</button>
+		</div>
+		</div>
+	</form>
+	</div>
 </body>
 </html>

@@ -27,7 +27,7 @@ section {
     min-width: 350px;
 }
 .headings {
-    color:white;
+    color:#e9e9e9;
     font-size: 1.5rem;
 }
 p {
@@ -46,6 +46,7 @@ h1 {
     transition: 0.5s;
     padding: 10px 10px;
     border: 2px solid inherit;
+    border-radius: 5px;
 }
 .read-more:hover {
     background-color: #F08700;

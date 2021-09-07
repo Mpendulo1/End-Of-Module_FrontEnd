@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/my-styles.css">
+    <link rel="stylesheet" href="./style/forms.css">
     <script src="./JS/edit.js"></script>
 </head>
 <body>
@@ -37,12 +38,14 @@
 
         <div id="remove_vehicle" class="modal">
 
-            <form class="modal-content">
+            <form class="modal-content" method="PUT" action="https://obscure-sea-63906.herokuapp.com/delete-vehicle/">
               <div class="container">
+                  <div class="header">
                 <h1>Remove Vehicle</h1>
-                <p>Enter Vehicle-ID To Remove  A Vehicle.</p>
+                <p>Enter Vehicle-ID To Remove  A Vehicle.</p>                      
+                  </div>
                 <hr />
-                <div class="container1 center">
+                <div class="label-form">
                 <label for="vehicle-id"><b>Vehicle-ID</b></label>
                 <input
                   id="delete-car"
@@ -51,10 +54,10 @@
                   name="VHC_id"
                   required
                 />
+                 </div>
                 <div class="clearfix">
-                  <button onsubmit="event.preventDefault(); deleteProduct()" type="submit" class="signupbtn">Remove</button>
+                  <button onclick=" deleteProduct(), event.preventDefault()" class="signupbtn">Remove</button>
                 </div>
-              </div>
             </form>
           </div>
           </div>

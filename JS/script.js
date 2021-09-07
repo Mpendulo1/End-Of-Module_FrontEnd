@@ -65,7 +65,7 @@ if (cartItemContainer.length > 0) {
       <p class="vehicle-price">Price: R${cartItem[4]} </p>
       <p class="vehicle-type">Type: ${cartItem[3]}</p>
       <p class="vehicle-year">Year: ${cartItem[5]}</p>
-      <button onclick="removeVehicle(${cartItem[0]})" class="remove-btn purchase text-bold">Remove</button>
+      <button onclick="removeVehicle(${cartItem[0]})" class="btn remove-btn purchase text-bold">Remove</button>
       </div>
           
   </div>

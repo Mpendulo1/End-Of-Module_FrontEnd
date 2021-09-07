@@ -1,0 +1,81 @@
+.container {
+    max-width: 800px;
+    min-width: 300px;
+    height: auto;
+    padding: 75px;
+}
+.topnav input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+width: 100%; /* Full width */
+
+overflow: auto; /* Enable scroll if needed */
+
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 2px solid #F49F0A;
+width: 50%; /* Could be more or less, depending on screen size */
+}
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: 2px solid #F49F0A;
+background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+background-color: #F49F0A;
+outline: none;
+}
+hr {
+    color: #F49F0A;
+}
+h1 {
+    color: #2196F3;
+}
+.signupbtn {
+    text-decoration: none;
+    background-color: #2196F3;
+    border: 2px solid #2196F3;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+    align-items: center;
+}
+.signupbtn:hover {
+    background-color: #F49F0A;
+    border: #F49F0A;
+}
+.clearfix {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
