@@ -1,0 +1,119 @@
+.row1   {
+display: -ms-flexbox; 
+display: flex;
+-ms-flex-wrap: wrap; 
+flex-wrap: wrap;
+}
+
+.col-25 {
+-ms-flex: 25%; 
+flex: 25%;
+}
+
+.col-50 {
+    -ms-flex: 50%; 
+    flex: 50%;
+}
+
+.col-75 {
+-ms-flex: 75%; 
+flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+padding: 0 16px;
+}
+
+.container {
+    max-width: 800px;
+    min-width: 300px;
+    height: auto;
+    margin-left: 230px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid #F49F0A;
+    background: #f1f1f1;
+    }
+    
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+    background-color: #F49F0A;
+    outline: none;
+    }
+    hr {
+        color: #F49F0A;
+    }
+    h1 {
+        color: #2196F3;
+    }
+
+label {
+margin-bottom: 10px;
+display: block;
+}
+
+.icon-container {
+margin-bottom: 20px;
+padding: 7px 0;
+font-size: 24px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #2196F3;
+    border: 2px solid #2196F3;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: #F49F0A;
+    border: #F49F0A;
+}
+
+a {
+color: #2196F3;
+}
+
+hr {
+border: 1px solid lightgrey;
+}
+
+span.price {
+float: right;
+color: grey;
+}
+
+@media (max-width: 800px) {
+.row {
+    flex-direction: column;
+}
+.col-25 {
+    margin-bottom: 20px;
+}
+}
+.header {
+    color: #2196F3;
+    font-size: 2rem;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto 15% auto;
+    border: 2px solid #F49F0A;
+    min-width: 250px;
+    max-width: 600px;
+    display: flex;
+}
+.checkout-btn {
+    margin-left: 160px;
+}

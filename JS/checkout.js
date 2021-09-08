@@ -38,3 +38,18 @@ function checkOut(){
     })
 
 }
+
+
+// function sendEmail() {
+// 	Email.send({
+// 	Host: "smtp.gmail.com",
+// 	Username : "mpendulokhozamk2@gmail.com",
+// 	Password : "LloydSibanda11",
+// 	To : '<recipient’s email address>',
+// 	From : "<sender’s email address>",
+// 	Subject : "<email subject>",
+// 	Body : "<email body>",
+// 	}).then(
+// 		message => alert("mail sent successfully")
+// 	);
+// }

@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style/my-styles.css">
-    <link rel="stylesheet" href="./style/login.css">
-    <link rel="stylesheet" href="./style/forms.css">
-    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style/my-styles.css">
+<link rel="stylesheet" href="./style/login.css">
+<link rel="stylesheet" href="./style/forms.css">
+
 </head>
 <body>
-  <div class="topnav">
-    <a class="active" href="./index.html">Home</a>
-    <a href="#about">About</a>
-    <a href="./Shop.html">Shop</a>
-    <a onclick="document.getElementById('id05').style.display='block'">Cart</a>
-      <div class="dropdown">
-      <button class="dropbtn">Sign Up
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="./login.html">login</a>
-        <a href="./register.html">register</a>
-      </div>
-    </div> 
-        <div class="dropdown">
-      <button class="dropbtn">Garage
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="./CreateVehicle.html">Create Vehicle</a>
-        <a href="./removevehicle.html">Remove Vehicle</a>
-        <a href="./updatevehicle.html">Update Vehicle</a>
-        <a href="#">Customer Profile</a>
-      </div>
-    </div> 
-   
-  <h2> Login Form</h2>
-  <form class="modal-content animate" >
-    <div class="imgcontainer">
-     </div>
+<div class="topnav">
+<a class="active" href="./index.html">Home</a>
+<a href="#about">About</a>
+<a href="./Shop.html">Shop</a>
+<a onclick="document.getElementById('id05').style.display='block'">Cart</a>
+<div class="dropdown">
+<button class="dropbtn">Sign Up
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="./login.html">login</a>
+<a href="./register.html">register</a>
+</div>
+</div> 
+<div class="dropdown">
+<button class="dropbtn">Garage
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="./CreateVehicle.html">Create Vehicle</a>
+<a href="./removevehicle.html">Remove Vehicle</a>
+<a href="./updatevehicle.html">Update Vehicle</a>
+<a href="#">Customer Profile</a>
+</div>
+</div> 
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input id="username" type="text" placeholder="Enter Username" name="username" required>
+<h2> Login Form</h2>
+<form class="modal-content animate" >
+<div class="imgcontainer">
+</div>
 
-      <label for="psw"><b>Password</b></label>
-      <input id="password" type="password" placeholder="Enter Password" name="password" required>
-      <button onclick="event.preventDefault(); loginFunction()" type="submit">Login</button>
+<div class="container">
+<label for="uname"><b>Username</b></label>
+<input id="username" type="text" placeholder="Enter Username" name="username" required>
 
-    </div>
-  </form>
-  <script src="./JS/register.js"></script>
+<label for="psw"><b>Password</b></label>
+<input id="password" type="password" placeholder="Enter Password" name="password" required>
+<div class="clearfix">
+<button class="submit" onclick="event.preventDefault(); loginFunction()" type="submit">Login</button>
+</div>
+
+</div>
+</form>
+<script src="./JS/register.js"></script>
 </body>
 </html>
