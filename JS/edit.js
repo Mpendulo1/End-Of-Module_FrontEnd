@@ -21,7 +21,7 @@ mode: 'cors'
 }).then(res => res.json()).then(data => {
 console.log(data)
 console.log("Vehicle created successfully")
-alert('You have sucessfully Added A Profile! Please View It On The add player profile Page')
+alert('You have sucessfully Added A Vehicle! Please View It In Shop profile Page')
 window.location.replace('./Shop.html')
 
 })

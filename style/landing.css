@@ -18,8 +18,7 @@ section {
 .header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    line-height: 15px;
+    justify-content: center;   
     column-gap: normal;
     padding-top: 130px;
     padding-right: 150px;

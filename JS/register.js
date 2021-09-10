@@ -15,6 +15,7 @@ password: password,
 username: username,
 email: email,
 }),
+mode: "cors",
 headers: {
 "Content-type": "application/json",
 }})
@@ -33,6 +34,7 @@ body: JSON.stringify ({
 username: username,
 password: password,
 }),
+CORS: "Allow-Acess-Control-Origin",
 headers: {
 "Content-Type": "application/json",
 

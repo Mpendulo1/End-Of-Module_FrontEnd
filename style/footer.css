@@ -1,0 +1,14 @@
+.style-it {
+
+    width: 100%;
+    position: absolute;
+}
+.footer-class {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #263846;
+    color: #F49F0A;
+    font-size: 20px;
+    width: 100%;
+}

@@ -200,6 +200,11 @@ img.vehicle-image {
   display: flex;
   justify-content: center;
 }
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 .cart-buttons {
   display: flex;
   justify-content: center;
