@@ -21,11 +21,9 @@ mode: 'cors'
 }).then(res => res.json()).then(data => {
 console.log(data)
 console.log("Vehicle created successfully")
-
-if (data['message'] == "Player Profile Added Successfully") {
 alert('You have sucessfully Added A Profile! Please View It On The add player profile Page')
 window.location.replace('./Shop.html')
-}
+
 })
 }
 
