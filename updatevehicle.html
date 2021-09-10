@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/my-styles.css">
-    <link rel="stylesheet" href="./style/forms.css">
-    <script src="./JS/edit.js"></script>
-</head>
-<body>
-    <div class="topnav">
-        <a class="active" href="./index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="./Shop.html">Shop</a>
-        <a onclick="document.getElementById('id05').style.display='block'">Cart</a>
-          <div class="dropdown">
-          <button class="dropbtn">Sign Up
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="./login.html">login</a>
-            <a href="./register.html">register</a>
-          </div>
-        </div> 
-            <div class="dropdown">
-          <button class="dropbtn">Garage
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="./CreateVehicle.html">Create Vehicle</a>
-            <a href="./removevehicle.html">Remove Vehicle</a>
-            <a href="./updatevehicle.html">Update Vehicle</a>
-            <a href="#">Customer Profile</a>
-          </div>
-        </div> 
-</div>
 
-<div id="update_vehicle" class="modal">
-		<form class="modal-content" action="https://obscure-sea-63906.herokuapp.com/edit-vehicle/" method="PUT">
-		<div class="container">
-			<div class="header">
-		<h1>Update Vehicle</h1>
-		<p>Please Enter Your Details In This To Edit A Vehicle</p>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style/my-styles.css">
+	<link rel="stylesheet" href="./style/forms.css">
+	<script src="./JS/edit.js"></script>
+</head>
+
+<body>
+	<div class="topnav">
+		<a class="active" href="./index.html">Home</a>
+		<a href="./about.html">About</a>
+		<a href="./Shop.html">Shop</a>
+		<a onclick="document.getElementById('id05').style.display='block'">Cart</a>
+		<div class="dropdown">
+			<button class="dropbtn">Sign Up
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="./login.html">login</a>
+				<a href="./register.html">register</a>
 			</div>
-		<hr>
-		<div class="form-label">
-		<label for="vehicle id ">Vehicle Id</label>
-	<input id="Product_ID" type="text" name="VHC_id">
-	<label for="vehicle name">vehicle Name</label>
-	<input id="name" type="text" name="name" >
-	<label for="vehicle Brand">Vehicle Brand</label>
-	<input id="brand" type="text" name="brand" >
-	<label for="Vehicle Type">Vehicle Type</label>
-	<input id="type" type="text" name="type" >
-	<label for="Vehicle Price">Vehicle Price</label>
-	<input id="price" type="text" name="price" >
-	<label for="Vehicle Yeat">Vehicle Year</label>
-	<input id="year" type="text"  name="year" >
-	<label for="Vehicle Descriptio">Vehicle Description</label>
-	<input id="description" type="text" name="description" >
-	<label for="Vehicle Transition">Vehicle Transition</label>
-	<input id="transition" type="text" name="transition" >
-	<label for="image url">Image Url</label>
-	<input id="image_url" type="text" placeholder="Ener image url.." name="image">               
 		</div>
-		<div class="clearfix">
-			<button onclick=" updateProducts(), event.preventDefault()" type="submit" class="signupbtn">Update</button>
+		<div class="dropdown">
+			<button class="dropbtn">Garage
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="./CreateVehicle.html">Create Vehicle</a>
+				<a href="./removevehicle.html">Remove Vehicle</a>
+				<a href="./updatevehicle.html">Update Vehicle</a>
+				<a href="./customer.html">Customer Profile</a>
+			</div>
 		</div>
-		</div>
-	</form>
+	</div>
+
+	<div id="update_vehicle" class="modal">
+		<form class="modal-content" action="https://obscure-sea-63906.herokuapp.com/edit-vehicle/" method="PUT">
+			<div class="container">
+				<div class="header">
+					<h1>Update Vehicle</h1>
+					<p>Please Enter Your Details In This To Edit A Vehicle</p>
+				</div>
+				<hr>
+				<div class="form-label">
+					<label for="vehicle id ">Vehicle Id</label>
+					<input id="Product_ID" type="text" name="VHC_id">
+					<label for="vehicle name">vehicle Name</label>
+					<input id="name" type="text" name="name">
+					<label for="vehicle Brand">Vehicle Brand</label>
+					<input id="brand" type="text" name="brand">
+					<label for="Vehicle Type">Vehicle Type</label>
+					<input id="type" type="text" name="type">
+					<label for="Vehicle Price">Vehicle Price</label>
+					<input id="price" type="text" name="price">
+					<label for="Vehicle Yeat">Vehicle Year</label>
+					<input id="year" type="text" name="year">
+					<label for="Vehicle Descriptio">Vehicle Description</label>
+					<input id="description" type="text" name="description">
+					<label for="Vehicle Transition">Vehicle Transition</label>
+					<input id="transition" type="text" name="transition">
+					<label for="image url">Image Url</label>
+					<input id="image_url" type="text" placeholder="Ener image url.." name="image">
+				</div>
+				<div class="clearfix">
+					<button onclick=" updateProducts(), event.preventDefault()" type="submit"
+						class="signupbtn">Update</button>
+				</div>
+			</div>
+		</form>
 	</div>
 </body>
+
 </html>

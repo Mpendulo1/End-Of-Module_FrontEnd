@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading {
+  color: #2196F3;
+}
+.customer-profile {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5vh;
+    position: inherit;
+}
+.users {
+    position: relative;
+    min-width: 250px;
+    max-width: 300px; 
+    height: auto;
+    background: #b9bbbe;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+.profile {
+      max-width: 18.57142857rem;
+  position: relative;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: 1.61803398875px solid #999;
+  border-radius: 6.472135955px;
+  padding: 20px;
+  background-color: linear-gradient(#fff, #2f2f2f);
+  margin: 4vh auto auto auto;
+  box-shadow: 1.61803398875px 3.61803398875px 4.61803398875px rgb(255, 136, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}

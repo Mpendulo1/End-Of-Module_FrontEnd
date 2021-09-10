@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/my-styles.css">
-    <link rel="stylesheet" href="./style/forms.css">
-    <script src="./JS/edit.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/my-styles.css">
+  <link rel="stylesheet" href="./style/forms.css">
+  <script src="./JS/edit.js"></script>
 </head>
+
 <body>
-    <div class="topnav">
-        <a class="active" href="./index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="./Shop.html">Shop</a>
-        <a onclick="document.getElementById('id05').style.display='block'">Cart</a>
-          <div class="dropdown">
-          <button class="dropbtn">Sign Up
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="./login.html">login</a>
-            <a href="./register.html">register</a>
-          </div>
-        </div> 
-            <div class="dropdown">
-          <button class="dropbtn">Garage
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="./CreateVehicle.html">Create Vehicle</a>
-            <a href="./removevehicle.html">Remove Vehicle</a>
-            <a href="./updatevehicle.html">Update Vehicle</a>
-            <a href="#">Customer Profile</a>
-          </div>
-        </div> 
+  <div class="topnav">
+    <a class="active" href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./Shop.html">Shop</a>
+    <a onclick="document.getElementById('id05').style.display='block'">Cart</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sign Up
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./login.html">login</a>
+        <a href="./register.html">register</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Garage
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./CreateVehicle.html">Create Vehicle</a>
+        <a href="./removevehicle.html">Remove Vehicle</a>
+        <a href="./updatevehicle.html">Update Vehicle</a>
+        <a href="./customer.html">Customer Profile</a>
+      </div>
+    </div>
 
-        <div id="remove_vehicle" class="modal">
+    <div id="remove_vehicle" class="modal">
 
-            <form class="modal-content" method="PUT" action="https://obscure-sea-63906.herokuapp.com/delete-vehicle/">
-              <div class="container">
-                  <div class="header">
-                <h1>Remove Vehicle</h1>
-                <p>Enter Vehicle-ID To Remove  A Vehicle.</p>                      
-                  </div>
-                <hr />
-                <div class="label-form">
-                <label for="vehicle-id"><b>Vehicle-ID</b></label>
-                <input
-                  id="delete-car"
-                  type="text"
-                  placeholder="Eg. 1"
-                  name="VHC_id"
-                  required
-                />
-                 </div>
-                <div class="clearfix">
-                  <button onclick=" deleteProduct(), event.preventDefault()" class="signupbtn">Remove</button>
-                </div>
-            </form>
+      <form class="modal-content" method="PUT" action="https://obscure-sea-63906.herokuapp.com/delete-vehicle/">
+        <div class="container">
+          <div class="header">
+            <h1>Remove Vehicle</h1>
+            <p>Enter Vehicle-ID To Remove A Vehicle.</p>
           </div>
+          <hr />
+          <div class="label-form">
+            <label for="vehicle-id"><b>Vehicle-ID</b></label>
+            <input id="delete-car" type="text" placeholder="Eg. 1" name="VHC_id" required />
           </div>
+          <div class="clearfix">
+            <button onclick=" deleteProduct(), event.preventDefault()" class="signupbtn">Remove</button>
+          </div>
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>

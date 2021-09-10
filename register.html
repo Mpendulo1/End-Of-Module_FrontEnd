@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" ccontent="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./style/login.css">
-<link rel="stylesheet" href="./style/my-styles.css">
-<link rel="stylesheet" href="./style/forms.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="./JS/script.js"></script>
-<title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" ccontent="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/login.css">
+  <link rel="stylesheet" href="./style/my-styles.css">
+  <link rel="stylesheet" href="./style/forms.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="./JS/script.js"></script>
+  <title>Document</title>
 </head>
+
 <body>
-<div class="topnav">
-<a class="active" href="./index.html">Home</a>
-<a href="#about">About</a>
-<a href="Shop.html">Shop</a>
-<a onclick="document.getElementById('id05').style.display='block'" >Cart</a>
-<div class="dropdown">
-<button class="dropbtn">Sign Up
-<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-content">
-<a href="./login.html">login</a>
-<a href="./register.html">register</a>
-</div>
-</div> 
-<div class="dropdown">
-<button class="dropbtn">Garage
-<i class="fa fa-caret-down"></i>
-</button>
-<div class="dropdown-content">
-<a href="./CreateVehicle.html">Create Vehicle</a>
-<a href="./removevehicle.html">Remove Vehicle</a>
-<a href="./updatevehicle.html">Update Vehicle</a>
-<a href="#">Customer Profile</a>
-</div>
-</div> 
+  <div class="topnav">
+    <a class="active" href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="Shop.html">Shop</a>
+    <a onclick="document.getElementById('id05').style.display='block'">Cart</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sign Up
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./login.html">login</a>
+        <a href="./register.html">register</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Garage
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./CreateVehicle.html">Create Vehicle</a>
+        <a href="./removevehicle.html">Remove Vehicle</a>
+        <a href="./updatevehicle.html">Update Vehicle</a>
+        <a href="#">Customer Profile</a>
+      </div>
+    </div>
 
-</div>
-<form class="modal-content" >
-<div class="container">
-<div class="header">
-<h1>Sign Up</h1>
-<p>Please fill in this form to create an account.</p>
-</div>
-<hr>
-<div class="label-form">
-<label for="firstname"><b>firstname</b></label>
-<input id="fname" type="text" placeholder="Enter name" name="firstname" required>
+  </div>
+  <form class="modal-content">
+    <div class="container">
+      <div class="header">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+      </div>
+      <hr>
+      <div class="label-form">
+        <label for="firstname"><b>firstname</b></label>
+        <input id="fname" type="text" placeholder="Enter name" name="firstname" required>
 
-<label for="lastname"><b>lastname</b></label>
-<input id="lname" type="text" placeholder="Enter Surname" name="lastname" required>
+        <label for="lastname"><b>lastname</b></label>
+        <input id="lname" type="text" placeholder="Enter Surname" name="lastname" required>
 
-<label for="contact"><b>Contact</b></label>
-<input id="contact-input" type="text" placeholder="Eg. 078-123-4567" name="contact" required>
+        <label for="contact"><b>Contact</b></label>
+        <input id="contact-input" type="text" placeholder="Eg. 078-123-4567" name="contact" required>
 
-<label for="pws"><b>Password</b></label>
-<input id="password" type="password" placeholder="Enter Password" name="password" required>
+        <label for="pws"><b>Password</b></label>
+        <input id="password" type="password" placeholder="Enter Password" name="password" required>
 
-<label for="username"><b>Username</b></label>
-<input id="username" type="text" placeholder="Enter Username" name="username" required>
+        <label for="username"><b>Username</b></label>
+        <input id="username" type="text" placeholder="Enter Username" name="username" required>
 
-<label for="email"><b>Email</b></label>
-<input id="email-input" type="text" placeholder="Eg. example@gmail.com" name="email" required>
+        <label for="email"><b>Email</b></label>
+        <input id="email-input" type="text" placeholder="Eg. example@gmail.com" name="email" required>
 
-</div>
+      </div>
 
-<div class="clearfix">
-<button onclick="event.preventDefault(); myFunction()" class="submit">Sign Up</button>
-</div>
-</div>
-</form>
-<script src="/JS/register.js"></script>
+      <div class="clearfix">
+        <button onclick="event.preventDefault(); myFunction()" class="submit">Sign Up</button>
+      </div>
+    </div>
+  </form>
+  <script src="/JS/register.js"></script>
 </body>
+
 </html>

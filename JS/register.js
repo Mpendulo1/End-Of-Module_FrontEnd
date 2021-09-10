@@ -38,7 +38,12 @@ headers: {
 
 },}) 
 .then((res) => res.json())
-.then(data => {
-window.location.replace('./Shop.html')
+.then(res => {
+  if (!res.data){
+    alert('Invalid Username or Password')
+  }
+  else{
+    window.location.replace('./Shop.html')
+  }
 });
 }

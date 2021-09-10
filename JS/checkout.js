@@ -1,32 +1,21 @@
 function checkOut(){
-    let firstName = document.getElementById('name').value
-    let surName = document.getElementById('surname').value
-    let phoneNumber = document.getElementById('phone').value
-    let licencenumber = document.getElementById('licenceNumber').value
-    let address = document.getElementById('address').value
-    let streetName = document.getElementById('streetAddress').value
-    let cityName = document.getElementById('cityAddress').value
-    let postalName = document.getElementById('postalAddress').value
-    let email = document.getElementById('email').value
-    let typeOfvehicle = document.getElementById('TPVehicle').value
-    let numberofvehicles = document.getElementById('NumberOfVehicles').value
-    let RadiusOfSpeculation = document.getElementById('ROSpeculation').value
-
+let firstname = document.getElementById('fname').value
+let lastname = document.getElementById('lname').value
+let email = document.getElementById('email').value
+let address = document.getElementById('adr').value
+let city = document.getElementById('city').value
+let state = document.getElementById('state').value
+let postal = document.getElementById('zip').value
     fetch('https://obscure-sea-63906.herokuapp.com/create-insurance-provider', {
         method: 'POST',
         body: JSON.stringify ({
-            Name: firstName,
-            Surname: surName,
-            Phone: phoneNumber,
-            licence: licencenumber,
-            Address: address,
-            Address: streetName,
-            Address: cityName,
-            Address: postalName,
+            Name: firstname,
+            Surname: lastname,
             Email: email,
-            Type_of_vehicle: typeOfvehicle,
-            Number_of_vehicle: numberofvehicles,
-            Radius_of_speculation: RadiusOfSpeculation,
+            Address: address,
+            Address: city,
+            Address: state,
+            Address: postal,
         }),
         headers: {
             "Content-Type": "application/json",
@@ -38,7 +27,31 @@ function checkOut(){
     })
 
 }
+function paymentMethod() {
+    let cardName = document.getElementById('cname').value
+    let cardNum = document.getElementById('ccnum').value
+    let expMonth = document.getElementById('expmonth').value
+    let expYear = document.getElementById('expyear').value
+    let CVV = document.getElementById('cvv').value
+    fetch('https://obscure-sea-63906.herokuapp.com/create-sales', {
+        method: 'POST',
+        body: JSON.stringify ({
+            cardName: cardName,
+            cardNumber: cardNum,
+            expMonth: expMonth,
+            expYear: expYear,
+            cvv: CVV,
+        }),
+        headers: {
+            "Content-Type": "application/json",
+        }
 
+    })
+    .then((res) => res.json())
+    .then(data => {
+        window.location.replace('./index.html')
+    })
+}
 
 // function sendEmail() {
 // 	Email.send({
